@@ -1,86 +1,84 @@
-Gacha Dosen Pembimbing DApp
+🎲 Thesis Advisor Gacha DApp
 
-Gacha Dosen DApp - Blockchain-Based Decentralized Thesis Advisor Allocation System
+Transparent & Tamper-Proof Blockchain-Based Thesis Advisor Allocation System
 
-Project Description
+📖 Project Description
 
-Gacha Dosen DApp is a decentralized smart contract solution built on the Stellar blockchain using the Soroban SDK. It provides a secure, transparent, and immutable platform for randomly assigning thesis or final project advisors (Dosen Pembimbing) to students.
+Gacha Dosen DApp is a smart contract application built on the Stellar blockchain network using the Soroban SDK.
 
-By leveraging the blockchain's deterministic Pseudo-Random Number Generator (PRNG), this contract ensures that the allocation process is 100% fair, verifiable, and free from human bias or manual intervention. Each allocation is permanently recorded on the Stellar network.
+Its simple function: To randomly and fairly allocate thesis advisors to students.
 
-Project Vision
+Thanks to blockchain technology, the random number generation system in this app is 100% pure and cannot be manipulated (set up by the university or admins). Every advisor allocation result will also be permanently recorded on the Stellar network, allowing anyone to view it transparently. No more drama or suspicion in advisor allocations!
 
-Our vision is to revolutionize the academic allocation process by:
+🎯 Project Vision
 
-Ensuring Absolute Fairness: Eliminating bias by using on-chain random generation for advisor assignments.
+The goal of this project is to improve the campus administration system by:
 
-Guaranteeing Transparency: Allowing all students and academic staff to publicly verify the gacha pool and assignment history.
+100% Fair: Eliminating favoritism or advisor "booking" because everything is drawn purely by the system.
 
-Providing Immutability: Creating a permanent, tamper-proof record of advisor allocations that cannot be altered once the gacha is rolled.
+Transparent: All students and campus staff can openly view the available advisor pool and the draw history.
 
-Modernizing Academic Systems: Bridging the gap between traditional campus administration and decentralized Web3 technologies.
+Permanent & Tamper-Proof (Immutable): Once a gacha result is out, it cannot be edited, deleted, or altered by anyone.
 
-Key Features
+Campus Modernization: Bringing future technology (Web3) into the campus academic system.
+
+✨ Key Features
 
 1. Dynamic Advisor Pool
 
-Admin functionality to securely add lecturers to the gacha pool.
+Admins can add lecturers into the "draw pool".
 
-Store detailed profiles including the lecturer's name and specific field of expertise (e.g., Full-Stack, UI/UX Design).
+Stored data includes the lecturer's name and area of expertise (e.g., Web Development, UI/UX Design).
 
 2. Provably Fair Gacha System
 
-Core allocation engine powered by Soroban's secure PRNG.
+The draw process is driven by Soroban's secure built-in Pseudo-Random Number Generator (PRNG).
 
-One-click function to randomly match a student with an available advisor.
+Only requires a single execution to match a student with an available advisor.
 
-Prevents execution if the pool is empty to ensure system stability.
+The system will automatically reject the draw if the advisor data is empty, preventing errors.
 
-3. Immutable History Tracking
+3. Undeletable History
 
-Real-time, transparent ledger of all gacha results.
+A digital notebook (Ledger) that stores gacha results in real-time.
 
-Easy data retrieval mapping each student to their assigned advisor.
+Easy to find out which student is advised by a specific lecturer.
 
-4. Stellar Network Integration
+4. Powered by Stellar Network
 
-Built on the highly efficient and low-cost Stellar network.
+Runs on the Stellar blockchain, known for being extremely fast and cheap.
 
-Scalable architecture ready to handle entire faculty cohorts.
+Ready to be used on a large scale (e.g., for all students in a faculty).
 
-Contract Details
+🔗 Smart Contract Details
 
 Network: Stellar Testnet
 
-Contract Address: CAXCONIMPWPG4SP5DUO7Q2LSUXP6LUZ2AMNXW46O3MB5SA7QNUYLRBDZ
+Contract Address (ID): CAXCONIMPWPG4SP5DUO7Q2LSUXP6LUZ2AMNXW46O3MB5SA7QNUYLRBDZ
 
-Future Scope
+🚀 Future Development Plan (Roadmap)
 
-Short-Term Enhancements
+Phase 1: UI/UX (Short-Term)
 
-Modern Web Interface: Building a sleek, responsive frontend dashboard using Tailwind CSS and Laravel to visualize the gacha results.
+Modern Web: Build a website interface using Laravel and Tailwind CSS to eliminate the need for black terminal typing.
 
-Enhanced UI/UX: Designing interactive, game-like "loot box" animations and intuitive user flows using Figma before frontend implementation.
+Gacha Animation: Add Loot Box or slot machine style animations (designed with Figma) to make the drawing experience feel like playing a game.
 
-Quota System: Implementing a maximum capacity limit for each lecturer so they don't get assigned too many students.
+Quota Limit: Add a maximum student limit for each advisor to prevent overload.
 
-Medium-Term Development
+Phase 2: Advanced Features (Medium-Term)
 
-Expertise Filtering: Allowing students to roll the gacha specifically within a desired field (e.g., rolling only for lecturers with Informatics Engineering backgrounds).
+Expertise Filter: Students can choose to "gacha" specifically within a certain category (e.g., only rolling for Computer Network specialist advisors).
 
-Admin Access Control: Implementing authorization so only verified campus administration wallets can add or remove lecturers from the pool.
+Admin Access Control: Lock the add/remove advisor feature so only campus admin digital wallets can perform these actions.
 
-Frontend DApp Integration: Connecting the smart contract to the browser using Freighter Wallet for seamless interaction without the terminal.
+Phase 3: Large Scale (Long-Term)
 
-Long-Term Vision
+Cross-Department Scaling: Develop the system to be used by multiple study programs simultaneously.
 
-Cross-Department Scaling: Expanding the contract to support multiple study programs simultaneously.
+Automated Reporting: A system that can export gacha results from the blockchain directly into official campus Excel/PDF report formats.
 
-DAO Governance: Allowing the student body (like MPM/BEM) to audit and propose changes to the allocation algorithm.
-
-Automated Reporting: Exporting the blockchain history directly into official campus academic administration formats.
-
-Technical Requirements
+🛠️ Technical Requirements
 
 Soroban SDK
 
@@ -88,25 +86,21 @@ Rust Programming Language
 
 Stellar CLI & Freighter Wallet
 
-Getting Started
+💻 How to Run the App
 
-Interact with the contract on the Stellar Testnet using the Soroban CLI.
+You can try interacting with this app directly via the terminal (Soroban CLI) on the Stellar Testnet. Follow these steps:
 
-1. Populate the Pool (Add Dosen):
+1. Add an Advisor to the Draw Pool:
 
 stellar contract invoke --id CAXCONIMPWPG4SP5DUO7Q2LSUXP6LUZ2AMNXW46O3MB5SA7QNUYLRBDZ --source-account default --network testnet -- add_dosen --name Pak_Budi --expertise Spesialis_Web_Dev
 
 
-2. Roll the Gacha!
+2. Let's Gacha Your Advisor!
+Replace "Zackhary" with your name or your friend's name:
 
 stellar contract invoke --id CAXCONIMPWPG4SP5DUO7Q2LSUXP6LUZ2AMNXW46O3MB5SA7QNUYLRBDZ --source-account default --network testnet -- roll_gacha --student_name Zackhary
 
 
-(Try simulating it for your peers as well by changing the student name to Agung, Falih, or Shahid).
-
-3. View Assignment History:
+3. View Draw Result History:
 
 stellar contract invoke --id CAXCONIMPWPG4SP5DUO7Q2LSUXP6LUZ2AMNXW46O3MB5SA7QNUYLRBDZ --source-account default --network testnet -- get_history
-
-
-Gacha Dosen DApp - Fair, Transparent, and Immutable Academic Allocations.
